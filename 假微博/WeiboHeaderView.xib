@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VGR-VR-Xh2" customClass="WeiboHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mEP-jp-duX">
+                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4ie-Fn-rQ1"/>
+                        <constraint firstAttribute="width" constant="50" id="UYm-KK-oAc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UH-wv-0eU">
+                    <rect key="frame" x="75" y="10" width="525" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.096715773650000003" blue="0.1154413554" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1小时前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loY-io-1vd">
+                    <rect key="frame" x="75" y="40" width="49" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.60769328430000003" blue="0.1885275948" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UT-zA-ygi">
+                    <rect key="frame" x="134" y="36" width="111" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2UH-wv-0eU" secondAttribute="trailing" id="0CK-AK-7wv"/>
+                <constraint firstItem="2UH-wv-0eU" firstAttribute="top" secondItem="mEP-jp-duX" secondAttribute="top" id="8lx-pD-r1O"/>
+                <constraint firstItem="mEP-jp-duX" firstAttribute="leading" secondItem="VGR-VR-Xh2" secondAttribute="leading" constant="10" id="IqJ-bE-RmI"/>
+                <constraint firstItem="loY-io-1vd" firstAttribute="leading" secondItem="2UH-wv-0eU" secondAttribute="leading" id="Ldc-uP-48A"/>
+                <constraint firstItem="9UT-zA-ygi" firstAttribute="bottom" secondItem="loY-io-1vd" secondAttribute="bottom" id="QWn-CE-CC5"/>
+                <constraint firstItem="loY-io-1vd" firstAttribute="top" secondItem="2UH-wv-0eU" secondAttribute="bottom" constant="10" id="XIp-4h-0aO"/>
+                <constraint firstItem="2UH-wv-0eU" firstAttribute="leading" secondItem="mEP-jp-duX" secondAttribute="trailing" constant="15" id="cOx-mA-P6m"/>
+                <constraint firstItem="9UT-zA-ygi" firstAttribute="leading" secondItem="loY-io-1vd" secondAttribute="trailing" constant="10" id="d8Y-GL-Omg"/>
+                <constraint firstItem="mEP-jp-duX" firstAttribute="top" secondItem="VGR-VR-Xh2" secondAttribute="top" constant="10" id="dab-H2-Ysf"/>
+                <constraint firstItem="loY-io-1vd" firstAttribute="leading" secondItem="mEP-jp-duX" secondAttribute="trailing" constant="15" id="sVM-qe-WYA"/>
+            </constraints>
+            <connections>
+                <outlet property="fromLabel" destination="9UT-zA-ygi" id="TTr-lw-ytU"/>
+                <outlet property="iconImageView" destination="mEP-jp-duX" id="ot2-qO-wqh"/>
+                <outlet property="nameLabel" destination="2UH-wv-0eU" id="KRJ-1a-geP"/>
+                <outlet property="timeLabel" destination="loY-io-1vd" id="apb-qd-DnQ"/>
+            </connections>
+            <point key="canvasLocation" x="521" y="458"/>
+        </view>
+    </objects>
+</document>

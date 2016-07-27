@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  假微博
+//
+//  Created by yangqinglong on 16/3/29.
+//  Copyright © 2016年 杨清龙. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <WeiboSDK.h>
+#import "WeiboManager.h"
+#import "UIView+frame.h"
+#define kAppKey @"706003107"
+#define kAppSecret @"53b3f1774f9a050e1d4931bab3b55633"
+#define kRedirectURL @"www.baidu.com"
+
+
+#define kThumnailSize (([UIScreen mainScreen].bounds.size.width - 10-20)/3)
+
+//头像高度
+#define kHeaderImageSize 50
+//纵向间距
+#define kPadding 10
+//发布微博的text字体
+#define kTextSize 14
+//转发的text字体大小
+#define kRetweetTextSize 12
+//屏幕宽度
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+//获取文字大小
+#define kGetTextSize (_isRespost ?kRetweetTextSize:kTextSize)
+
+
+#endif /* PrefixHeader_pch */
